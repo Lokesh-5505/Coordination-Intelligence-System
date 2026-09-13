@@ -10,6 +10,8 @@ servers:
 tags:
   - name: health
     description: Health operations
+  - name: coordination
+    description: Construction coordination intelligence
 paths:
   /healthz:
     get:
@@ -24,7 +26,285 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /projects/current/overview:
+    get:
+      operationId: getProjectOverview
+      tags: [coordination]
+      summary: Get the current project overview
+      responses:
+        "200":
+          description: Project overview
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProjectOverview"
+  /projects/current/stakeholders:
+    get:
+      operationId: listStakeholders
+      tags: [coordination]
+      summary: List project stakeholders
+      responses:
+        "200":
+          description: Stakeholders
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Stakeholder"
+  /projects/current/activities:
+    get:
+      operationId: listActivities
+      tags: [coordination]
+      summary: List project activities and deliverables
+      responses:
+        "200":
+          description: Activities
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Activity"
+  /projects/current/dependencies:
+    get:
+      operationId: listDependencies
+      tags: [coordination]
+      summary: List dependency edges
+      responses:
+        "200":
+          description: Dependencies
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Dependency"
+  /projects/current/changes:
+    get:
+      operationId: listChanges
+      tags: [coordination]
+      summary: List project changes
+      responses:
+        "200":
+          description: Changes
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Change"
+    post:
+      operationId: createChange
+      tags: [coordination]
+      summary: Log a project change
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ChangeInput"
+      responses:
+        "201":
+          description: Change created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Change"
+  /changes/{changeId}/impact:
+    get:
+      operationId: getChangeImpact
+      tags: [coordination]
+      summary: Get deterministic impact analysis for a change
+      parameters:
+        - $ref: "#/components/parameters/ChangeId"
+      responses:
+        "200":
+          description: Impact report
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ImpactReport"
+  /changes/{changeId}/analyze-impact:
+    post:
+      operationId: analyzeChangeImpact
+      tags: [coordination]
+      summary: Explain and draft actions from a change
+      parameters:
+        - $ref: "#/components/parameters/ChangeId"
+      responses:
+        "200":
+          description: Grounded impact analysis
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ImpactReport"
+  /projects/current/approvals:
+    get:
+      operationId: listApprovals
+      tags: [coordination]
+      summary: List approval requests
+      responses:
+        "200":
+          description: Approvals
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Approval"
+  /approvals/{approvalId}:
+    patch:
+      operationId: updateApproval
+      tags: [coordination]
+      summary: Update an approval decision
+      parameters:
+        - $ref: "#/components/parameters/ApprovalId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ApprovalUpdate"
+      responses:
+        "200":
+          description: Approval updated
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Approval"
+  /projects/current/actions:
+    get:
+      operationId: listActions
+      tags: [coordination]
+      summary: List project actions
+      responses:
+        "200":
+          description: Actions
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Action"
+  /actions/{actionId}:
+    patch:
+      operationId: updateAction
+      tags: [coordination]
+      summary: Update an action status
+      parameters:
+        - $ref: "#/components/parameters/ActionId"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ActionUpdate"
+      responses:
+        "200":
+          description: Action updated
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Action"
+  /projects/current/alerts:
+    get:
+      operationId: listAlerts
+      tags: [coordination]
+      summary: List coordination alerts
+      responses:
+        "200":
+          description: Alerts
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Alert"
+  /alerts/{alertId}/acknowledge:
+    post:
+      operationId: acknowledgeAlert
+      tags: [coordination]
+      summary: Acknowledge an alert
+      parameters:
+        - $ref: "#/components/parameters/AlertId"
+      responses:
+        "200":
+          description: Acknowledged alert
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Alert"
+  /projects/current/memory:
+    get:
+      operationId: listMemoryEntries
+      tags: [coordination]
+      summary: List project memory
+      responses:
+        "200":
+          description: Memory entries
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/MemoryEntry"
+  /projects/current/briefing:
+    get:
+      operationId: getDailyBriefing
+      tags: [coordination]
+      summary: Get a stakeholder coordination briefing
+      responses:
+        "200":
+          description: Daily briefing
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Briefing"
+  /projects/current/ask:
+    post:
+      operationId: askProject
+      tags: [coordination]
+      summary: Ask a grounded question about the project
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ProjectQuestionInput"
+      responses:
+        "200":
+          description: Grounded answer
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProjectAnswer"
 components:
+  parameters:
+    ChangeId:
+      name: changeId
+      in: path
+      required: true
+      schema:
+        type: string
+    ApprovalId:
+      name: approvalId
+      in: path
+      required: true
+      schema:
+        type: string
+    ActionId:
+      name: actionId
+      in: path
+      required: true
+      schema:
+        type: string
+    AlertId:
+      name: alertId
+      in: path
+      required: true
+      schema:
+        type: string
   schemas:
     HealthStatus:
       type: object
@@ -33,4 +313,218 @@ components:
           type: string
       required:
         - status
+    Project:
+      type: object
+      required: [id, name, location, status, progress, phase, updatedAt]
+      properties:
+        id: { type: string }
+        name: { type: string }
+        location: { type: string }
+        status: { type: string }
+        progress: { type: integer }
+        phase: { type: string }
+        updatedAt: { type: string }
+    ProjectOverview:
+      type: object
+      required: [project, stats, briefing, recentActivity]
+      properties:
+        project: { $ref: "#/components/schemas/Project" }
+        stats:
+          type: object
+          required: [blocked, overdue, approvals, alerts]
+          properties:
+            blocked: { type: integer }
+            overdue: { type: integer }
+            approvals: { type: integer }
+            alerts: { type: integer }
+        briefing: { $ref: "#/components/schemas/Briefing" }
+        recentActivity:
+          type: array
+          items:
+            $ref: "#/components/schemas/ActivityEvent"
+    Stakeholder:
+      type: object
+      required: [id, name, initials, role, company, status, ownedCount]
+      properties:
+        id: { type: string }
+        name: { type: string }
+        initials: { type: string }
+        role: { type: string }
+        company: { type: string }
+        status: { type: string }
+        ownedCount: { type: integer }
+        affectedByCount: { type: integer }
+    Activity:
+      type: object
+      required: [id, title, type, owner, ownerInitials, status, dueDate, dependencyCount, blockedReason]
+      properties:
+        id: { type: string }
+        title: { type: string }
+        type: { type: string }
+        owner: { type: string }
+        ownerInitials: { type: string }
+        status: { type: string }
+        dueDate: { type: string }
+        dependencyCount: { type: integer }
+        blockedReason: { type: ["string", "null"] }
+    Dependency:
+      type: object
+      required: [id, fromId, fromTitle, toId, toTitle, type, status]
+      properties:
+        id: { type: string }
+        fromId: { type: string }
+        fromTitle: { type: string }
+        toId: { type: string }
+        toTitle: { type: string }
+        type: { type: string }
+        status: { type: string }
+    Change:
+      type: object
+      required: [id, title, summary, status, severity, createdBy, createdAt, affectedCount]
+      properties:
+        id: { type: string }
+        title: { type: string }
+        summary: { type: string }
+        status: { type: string }
+        severity: { type: string }
+        createdBy: { type: string }
+        createdAt: { type: string }
+        affectedCount: { type: integer }
+    ChangeInput:
+      type: object
+      required: [title, summary, severity]
+      properties:
+        title: { type: string, minLength: 1 }
+        summary: { type: string, minLength: 1 }
+        severity: { type: string }
+    ImpactItem:
+      type: object
+      required: [id, label, kind, owner, ownerInitials, severity, reason, dueDate]
+      properties:
+        id: { type: string }
+        label: { type: string }
+        kind: { type: string }
+        owner: { type: string }
+        ownerInitials: { type: string }
+        severity: { type: string }
+        reason: { type: string }
+        dueDate: { type: string }
+    DraftAction:
+      type: object
+      required: [id, title, owner, ownerInitials, dueDate, priority]
+      properties:
+        id: { type: string }
+        title: { type: string }
+        owner: { type: string }
+        ownerInitials: { type: string }
+        dueDate: { type: string }
+        priority: { type: string }
+    ImpactReport:
+      type: object
+      required: [changeId, headline, explanation, scheduleImpact, severity, items, draftActions, approvals]
+      properties:
+        changeId: { type: string }
+        headline: { type: string }
+        explanation: { type: string }
+        scheduleImpact: { type: string }
+        severity: { type: string }
+        items:
+          type: array
+          items: { $ref: "#/components/schemas/ImpactItem" }
+        draftActions:
+          type: array
+          items: { $ref: "#/components/schemas/DraftAction" }
+        approvals:
+          type: array
+          items: { type: string }
+    Approval:
+      type: object
+      required: [id, title, requester, requesterInitials, approver, status, dueDate, category]
+      properties:
+        id: { type: string }
+        title: { type: string }
+        requester: { type: string }
+        requesterInitials: { type: string }
+        approver: { type: string }
+        status: { type: string }
+        dueDate: { type: string }
+        category: { type: string }
+    ApprovalUpdate:
+      type: object
+      required: [status]
+      properties:
+        status: { type: string }
+    Action:
+      type: object
+      required: [id, title, owner, ownerInitials, status, dueDate, source, priority]
+      properties:
+        id: { type: string }
+        title: { type: string }
+        owner: { type: string }
+        ownerInitials: { type: string }
+        status: { type: string }
+        dueDate: { type: string }
+        source: { type: string }
+        priority: { type: string }
+    ActionUpdate:
+      type: object
+      required: [status]
+      properties:
+        status: { type: string }
+    Alert:
+      type: object
+      required: [id, title, description, type, createdAt, acknowledged, severity]
+      properties:
+        id: { type: string }
+        title: { type: string }
+        description: { type: string }
+        type: { type: string }
+        createdAt: { type: string }
+        acknowledged: { type: boolean }
+        severity: { type: string }
+    MemoryEntry:
+      type: object
+      required: [id, title, description, type, actor, createdAt]
+      properties:
+        id: { type: string }
+        title: { type: string }
+        description: { type: string }
+        type: { type: string }
+        actor: { type: string }
+        createdAt: { type: string }
+    ActivityEvent:
+      type: object
+      required: [id, label, description, actor, actorInitials, createdAt, tone]
+      properties:
+        id: { type: string }
+        label: { type: string }
+        description: { type: string }
+        actor: { type: string }
+        actorInitials: { type: string }
+        createdAt: { type: string }
+        tone: { type: string }
+    Briefing:
+      type: object
+      required: [greeting, summary, items, generatedAt]
+      properties:
+        greeting: { type: string }
+        summary: { type: string }
+        items:
+          type: array
+          items: { type: string }
+        generatedAt: { type: string }
+    ProjectQuestionInput:
+      type: object
+      required: [question]
+      properties:
+        question: { type: string, minLength: 1 }
+    ProjectAnswer:
+      type: object
+      required: [answer, confidence, sources]
+      properties:
+        answer: { type: string }
+        confidence: { type: string }
+        sources:
+          type: array
+          items: { type: string }
 

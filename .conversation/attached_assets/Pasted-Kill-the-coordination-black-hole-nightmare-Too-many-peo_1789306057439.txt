@@ -1,0 +1,58 @@
+Kill the coordination black hole nightmare
+Too many people. Too many handoffs. Too little visibility.
+
+Background
+Architecture, interior design and construction projects involve multiple stakeholders including clients, architects, designers, project owners, project managers, consultants, contractors, vendors, site teams and specialists. Each stakeholder is responsible for different activities, decisions and deliverables, while project information is often distributed across WhatsApp, emails, calls, meetings, drawings, documents and spreadsheets.
+
+As projects become more complex, this creates a coordination black hole where information may exist, but the relationship between that information and the people responsible for acting on it is unclear.
+
+Problem
+A change made by one stakeholder can affect multiple people, tasks, approvals and downstream activities. Identifying these impacts is often dependent on manual coordination and individual knowledge.
+
+There is a need for a coordination intelligence layer that can understand:
+
+Who is responsible for what
+Who is affected by a change
+What depends on what
+What requires approval
+What is blocked
+What needs to happen next
+Expected solution
+Participants should develop a Coordination Intelligence System capable of connecting stakeholders, responsibilities, activities, changes, dependencies, approvals and actions.
+
+Stakeholder & Role Management
+Represent stakeholders, roles, responsibilities and relationships.
+
+Project Activity & Change Tracking
+Capture project activities, decisions, issues and changes.
+
+Impact Identification
+Identify stakeholders, tasks or activities potentially affected by a change.
+
+Dependency Management
+Represent dependencies between tasks, activities, approvals and deliverables.
+
+Action Tracking
+Create, assign and track required actions.
+
+Approval Management
+Identify and track required approvals.
+
+Coordination Alerts
+Notify or warn relevant stakeholders about changes, delays or dependencies.
+
+Project Memory
+Maintain a history of important changes, decisions, actions and resolutions.
+
+Key requirements
+A realistic project scenario
+Multiple stakeholders
+Stakeholder roles and responsibilities
+Tasks / actions
+A project change or event
+Dependencies or relationships
+Identification of affected stakeholders or actions
+Status tracking
+At least one coordination-intelligence capability
+A working demonstration
+integrate AI/ML and make it more responsive for mobile and desktop devices also.
