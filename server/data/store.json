@@ -1,0 +1,1552 @@
+{
+  "projects": {
+    "ddb352ba-447d-4459-af33-6593abf22a56": {
+      "project": {
+        "id": "ddb352ba-447d-4459-af33-6593abf22a56",
+        "name": "Demo User's Project",
+        "description": "Active coordination workspace for Demo User's Project. Track live handoffs, cross-discipline blast radius changes, and role sign-offs.",
+        "location": "Project Site Location",
+        "phase": "Planning & Mobilization",
+        "status": "On Track",
+        "progress": 0,
+        "ownerId": "2d104205-fae7-46c4-b416-660ae68b6b72",
+        "isDemo": false,
+        "updatedAt": "2026-09-14 13:55:53.273288"
+      },
+      "stakeholders": [
+        {
+          "id": "821f370c-b9b2-4af1-a9cc-ce91a67d0255",
+          "projectId": "ddb352ba-447d-4459-af33-6593abf22a56",
+          "name": "Demo User",
+          "initials": "DU",
+          "role": "Project Delivery Manager",
+          "discipline": "Project Management",
+          "company": "Demo User's Project",
+          "email": "demo-1789321921663@coordination.demo",
+          "phone": "",
+          "whatsapp": "",
+          "status": "online",
+          "ownedCount": 0,
+          "affectedByCount": 0,
+          "raci": {}
+        }
+      ],
+      "activities": [],
+      "dependencies": [],
+      "changes": [],
+      "actions": [],
+      "approvals": [],
+      "alerts": [],
+      "memory": [
+        {
+          "id": "87f04fd1-3dad-4fb3-a03d-1833bdd4fb12",
+          "projectId": "ddb352ba-447d-4459-af33-6593abf22a56",
+          "title": "Project workspace initialized: Demo User's Project",
+          "description": "Workspace created by Demo User (Project Delivery Manager). Live coordination layer active.",
+          "type": "milestone",
+          "actor": "Demo User",
+          "tags": [
+            "Project Setup",
+            "Project Management"
+          ],
+          "createdAt": "2026-09-14 02:28:54.881"
+        }
+      ]
+    },
+    "fbda7029-a26c-48d9-a8bc-761800cf9172": {
+      "project": {
+        "id": "fbda7029-a26c-48d9-a8bc-761800cf9172",
+        "name": "Test User's Project",
+        "description": "Coordination Intelligence project",
+        "location": "Your Location",
+        "phase": "Planning",
+        "status": "On track",
+        "progress": 0,
+        "ownerId": "fedf5802-9be0-4cb6-a503-d70501d983ff",
+        "isDemo": false,
+        "updatedAt": "2026-09-14 13:55:53.259225"
+      },
+      "stakeholders": [],
+      "activities": [],
+      "dependencies": [],
+      "changes": [],
+      "actions": [],
+      "approvals": [],
+      "alerts": [],
+      "memory": []
+    },
+    "7854014f-2554-468b-a593-f86e5dec56ff": {
+      "project": {
+        "id": "7854014f-2554-468b-a593-f86e5dec56ff",
+        "name": "Login Test's Project",
+        "description": "Coordination Intelligence project",
+        "location": "Your Location",
+        "phase": "Planning",
+        "status": "On track",
+        "progress": 0,
+        "ownerId": "156e2054-9320-459c-91b5-eff74cd6079d",
+        "isDemo": false,
+        "updatedAt": "2026-09-14 13:55:53.33417"
+      },
+      "stakeholders": [],
+      "activities": [],
+      "dependencies": [],
+      "changes": [],
+      "actions": [],
+      "approvals": [],
+      "alerts": [],
+      "memory": []
+    },
+    "f5b132dd-2aca-472e-af82-21f26308b85e": {
+      "project": {
+        "id": "f5b132dd-2aca-472e-af82-21f26308b85e",
+        "name": "Demo User's Project",
+        "description": "Active coordination workspace for Demo User's Project. Track live handoffs, cross-discipline blast radius changes, and role sign-offs.",
+        "location": "Project Site Location",
+        "phase": "Planning & Mobilization",
+        "status": "On Track",
+        "progress": 0,
+        "ownerId": "cc2bbd6a-e9cc-4841-8049-c120c8894d92",
+        "isDemo": false,
+        "updatedAt": "2026-09-14 13:55:53.275983"
+      },
+      "stakeholders": [],
+      "activities": [],
+      "dependencies": [],
+      "changes": [],
+      "actions": [],
+      "approvals": [],
+      "alerts": [],
+      "memory": []
+    },
+    "86050d48-2369-4cc1-b05e-3179b4d7abfe": {
+      "project": {
+        "id": "86050d48-2369-4cc1-b05e-3179b4d7abfe",
+        "name": "Lokesh Ram's Project",
+        "description": "Coordination Intelligence project",
+        "location": "Your Location",
+        "phase": "Planning",
+        "status": "On track",
+        "progress": 0,
+        "ownerId": "f61fbe1f-caa2-4e82-9df8-3bd01162932b",
+        "isDemo": false,
+        "updatedAt": "2026-09-14 13:55:53.331493"
+      },
+      "stakeholders": [],
+      "activities": [],
+      "dependencies": [],
+      "changes": [],
+      "actions": [],
+      "approvals": [],
+      "alerts": [],
+      "memory": []
+    },
+    "ce17c044-358a-45f9-b74c-ad081fdafa8d": {
+      "project": {
+        "id": "ce17c044-358a-45f9-b74c-ad081fdafa8d",
+        "name": "Lokesh Ram's Project",
+        "description": "Coordination Intelligence project",
+        "location": "Your Location",
+        "phase": "Planning",
+        "status": "On track",
+        "progress": 0,
+        "ownerId": "28b23998-87f8-425a-9754-42c38c1dfef8",
+        "isDemo": false,
+        "updatedAt": "2026-09-14 13:55:53.349875"
+      },
+      "stakeholders": [],
+      "activities": [],
+      "dependencies": [],
+      "changes": [],
+      "actions": [],
+      "approvals": [],
+      "alerts": [],
+      "memory": []
+    },
+    "3081271c-d050-4355-9450-9342dee101ff": {
+      "project": {
+        "id": "3081271c-d050-4355-9450-9342dee101ff",
+        "name": "Isolation A Workspace",
+        "description": "Coordination Intelligence project",
+        "location": "Your Location",
+        "phase": "Planning",
+        "status": "On track",
+        "progress": 0,
+        "ownerId": "eb3008e7-c674-447c-9527-e37374473098",
+        "isDemo": false,
+        "updatedAt": "2026-09-14 13:55:53.264501"
+      },
+      "stakeholders": [],
+      "activities": [],
+      "dependencies": [],
+      "changes": [],
+      "actions": [],
+      "approvals": [],
+      "alerts": [],
+      "memory": []
+    },
+    "22b9198e-d122-4dfe-bba8-171020f3d70d": {
+      "project": {
+        "id": "22b9198e-d122-4dfe-bba8-171020f3d70d",
+        "name": "Isolation B Workspace",
+        "description": "Coordination Intelligence project",
+        "location": "Your Location",
+        "phase": "Planning",
+        "status": "On track",
+        "progress": 0,
+        "ownerId": "93bd9dc0-a01d-4e5c-93dd-9d2842103a78",
+        "isDemo": false,
+        "updatedAt": "2026-09-14 13:55:53.275264"
+      },
+      "stakeholders": [],
+      "activities": [],
+      "dependencies": [],
+      "changes": [],
+      "actions": [],
+      "approvals": [],
+      "alerts": [],
+      "memory": []
+    },
+    "782cb5a8-cbf0-41b4-8323-09163c048161": {
+      "project": {
+        "id": "782cb5a8-cbf0-41b4-8323-09163c048161",
+        "name": "Viewer Check 1789325623929",
+        "description": "Coordination Intelligence project",
+        "location": "Your Location",
+        "phase": "Planning",
+        "status": "On track",
+        "progress": 0,
+        "ownerId": "b3fe840c-b021-49d3-b4af-6660838bbf55",
+        "isDemo": false,
+        "updatedAt": "2026-09-14 13:55:53.248569"
+      },
+      "stakeholders": [],
+      "activities": [],
+      "dependencies": [],
+      "changes": [
+        {
+          "id": "fee5820c-5fe6-4969-ae76-4c9f68e0a49d",
+          "projectId": "782cb5a8-cbf0-41b4-8323-09163c048161",
+          "title": "Member write",
+          "summary": "Should succeed before role change",
+          "status": "active",
+          "severity": "low",
+          "discipline": "General",
+          "createdBy": "Viewer Check",
+          "affectedCount": 0,
+          "rawSignal": "",
+          "createdAt": "2026-09-14 02:28:53.228"
+        }
+      ],
+      "actions": [],
+      "approvals": [],
+      "alerts": [
+        {
+          "id": "51f50a3d-e062-4faa-ba29-9667d5b45a46",
+          "projectId": "782cb5a8-cbf0-41b4-8323-09163c048161",
+          "title": "New change: Member write",
+          "description": "Should succeed before role change",
+          "type": "impact",
+          "severity": "low",
+          "acknowledged": false,
+          "createdAt": "2026-09-14 02:28:54.551"
+        }
+      ],
+      "memory": [
+        {
+          "id": "7dc1357a-6d5f-4484-9175-657d09757058",
+          "projectId": "782cb5a8-cbf0-41b4-8323-09163c048161",
+          "title": "Change logged: Member write",
+          "description": "Should succeed before role change",
+          "type": "change",
+          "actor": "Viewer Check",
+          "tags": [
+            "[\"General\"",
+            "\"Change\"]"
+          ],
+          "createdAt": "2026-09-14 02:28:55.192"
+        }
+      ]
+    },
+    "4615bea4-62ce-483b-ad81-59648917e476": {
+      "project": {
+        "id": "4615bea4-62ce-483b-ad81-59648917e476",
+        "name": "Skyline Horizon Tower",
+        "description": "Active coordination workspace for Skyline Horizon Tower. Track live handoffs, cross-discipline blast radius changes, and role sign-offs.",
+        "location": "Project Site Location",
+        "phase": "Planning & Mobilization",
+        "status": "On Track",
+        "progress": 0,
+        "ownerId": "cc51723c-8784-4284-a8d2-32e9b613fdf7",
+        "isDemo": false,
+        "updatedAt": "2026-09-14 13:55:53.3456"
+      },
+      "stakeholders": [
+        {
+          "id": "7bf3c14a-4c80-41c9-a1c5-81c4eb95a343",
+          "projectId": "4615bea4-62ce-483b-ad81-59648917e476",
+          "name": "Vikram Malhotra",
+          "initials": "VM",
+          "role": "Principal Architect",
+          "discipline": "Architecture",
+          "company": "Skyline Horizon Tower",
+          "email": "lead.architect.1789385029782@studio-arch.com",
+          "phone": "",
+          "whatsapp": "",
+          "status": "online",
+          "ownedCount": 0,
+          "affectedByCount": 0,
+          "raci": {}
+        }
+      ],
+      "activities": [],
+      "dependencies": [],
+      "changes": [],
+      "actions": [],
+      "approvals": [],
+      "alerts": [],
+      "memory": [
+        {
+          "id": "aa98d37d-4071-44a6-a560-3fb1ac5303a1",
+          "projectId": "4615bea4-62ce-483b-ad81-59648917e476",
+          "title": "Project workspace initialized: Skyline Horizon Tower",
+          "description": "Workspace created by Vikram Malhotra (Principal Architect). Live coordination layer active.",
+          "type": "milestone",
+          "actor": "Vikram Malhotra",
+          "tags": [
+            "Project Setup",
+            "Architecture"
+          ],
+          "createdAt": "2026-09-14 02:28:54.883"
+        }
+      ]
+    },
+    "e2afcaf5-e345-4a67-a073-682635483c3c": {
+      "project": {
+        "id": "e2afcaf5-e345-4a67-a073-682635483c3c",
+        "name": "Skyline Horizon Tower",
+        "description": "Active coordination workspace for Skyline Horizon Tower. Track live handoffs, cross-discipline blast radius changes, and role sign-offs.",
+        "location": "Project Site Location",
+        "phase": "Planning & Mobilization",
+        "status": "On Track",
+        "progress": 0,
+        "ownerId": "8665b6ec-ba2c-40b5-acd4-db0ef6c60aee",
+        "isDemo": false,
+        "updatedAt": "2026-09-14 13:55:53.320949"
+      },
+      "stakeholders": [
+        {
+          "id": "13fb5124-9e82-4b2e-a7b3-be7fd92ee5fb",
+          "projectId": "e2afcaf5-e345-4a67-a073-682635483c3c",
+          "name": "Vikram Malhotra",
+          "initials": "VM",
+          "role": "Principal Architect",
+          "discipline": "Architecture",
+          "company": "Skyline Horizon Tower",
+          "email": "lead.architect.1789385092783@studio-arch.com",
+          "phone": "",
+          "whatsapp": "",
+          "status": "online",
+          "ownedCount": 0,
+          "affectedByCount": 0,
+          "raci": {}
+        }
+      ],
+      "activities": [],
+      "dependencies": [],
+      "changes": [],
+      "actions": [],
+      "approvals": [],
+      "alerts": [],
+      "memory": [
+        {
+          "id": "038655b7-fb3f-409c-a8f0-9f255b4157ec",
+          "projectId": "e2afcaf5-e345-4a67-a073-682635483c3c",
+          "title": "Project workspace initialized: Skyline Horizon Tower",
+          "description": "Workspace created by Vikram Malhotra (Principal Architect). Live coordination layer active.",
+          "type": "milestone",
+          "actor": "Vikram Malhotra",
+          "tags": [
+            "Project Setup",
+            "Architecture"
+          ],
+          "createdAt": "2026-09-14 02:28:54.881"
+        }
+      ]
+    },
+    "6463785c-ba8e-454c-ac79-39e16af471d7": {
+      "project": {
+        "id": "6463785c-ba8e-454c-ac79-39e16af471d7",
+        "name": "Skyline Horizon Tower",
+        "description": "Active coordination workspace for Skyline Horizon Tower. Track live handoffs, cross-discipline blast radius changes, and role sign-offs.",
+        "location": "Project Site Location",
+        "phase": "Planning & Mobilization",
+        "status": "On Track",
+        "progress": 0,
+        "ownerId": "b306ca57-15d2-4cbb-a7b0-e910ebf23e6f",
+        "isDemo": false,
+        "updatedAt": "2026-09-14 13:55:53.331572"
+      },
+      "stakeholders": [
+        {
+          "id": "fb16d791-f0dc-441c-a2c9-897e431a75f0",
+          "projectId": "6463785c-ba8e-454c-ac79-39e16af471d7",
+          "name": "Vikram Malhotra",
+          "initials": "VM",
+          "role": "Principal Architect",
+          "discipline": "Architecture",
+          "company": "Skyline Horizon Tower",
+          "email": "lead.architect.1789385198094@studio-arch.com",
+          "phone": "",
+          "whatsapp": "",
+          "status": "online",
+          "ownedCount": 0,
+          "affectedByCount": 0,
+          "raci": {}
+        }
+      ],
+      "activities": [],
+      "dependencies": [],
+      "changes": [],
+      "actions": [],
+      "approvals": [],
+      "alerts": [],
+      "memory": [
+        {
+          "id": "e82a732b-bc79-412b-a2bd-ed96a8cea2fe",
+          "projectId": "6463785c-ba8e-454c-ac79-39e16af471d7",
+          "title": "Project workspace initialized: Skyline Horizon Tower",
+          "description": "Workspace created by Vikram Malhotra (Principal Architect). Live coordination layer active.",
+          "type": "milestone",
+          "actor": "Vikram Malhotra",
+          "tags": [
+            "Project Setup",
+            "Architecture"
+          ],
+          "createdAt": "2026-09-14 02:28:54.883"
+        }
+      ]
+    },
+    "13d2099b-14f2-45b1-aaf5-973e6f76ea8d": {
+      "project": {
+        "id": "13d2099b-14f2-45b1-aaf5-973e6f76ea8d",
+        "name": "building in chennai",
+        "description": "Active coordination workspace for building in chennai. Track live handoffs, cross-discipline blast radius changes, and role sign-offs.",
+        "location": "Project Site Location",
+        "phase": "Planning & Mobilization",
+        "status": "On Track",
+        "progress": 0,
+        "ownerId": "405211f5-aeb1-4b18-ae82-a53a88cdbec9",
+        "isDemo": false,
+        "updatedAt": "2026-09-14 13:55:53.381792"
+      },
+      "stakeholders": [
+        {
+          "id": "188d7c3d-f5de-4b13-a956-b8f41eec4377",
+          "projectId": "13d2099b-14f2-45b1-aaf5-973e6f76ea8d",
+          "name": "babu",
+          "initials": "B",
+          "role": "Project Delivery Manager",
+          "discipline": "Project Management",
+          "company": "building in chennai",
+          "email": "babu@gmail.com",
+          "phone": "",
+          "whatsapp": "",
+          "status": "online",
+          "ownedCount": 0,
+          "affectedByCount": 0,
+          "raci": {}
+        }
+      ],
+      "activities": [],
+      "dependencies": [],
+      "changes": [],
+      "actions": [],
+      "approvals": [],
+      "alerts": [],
+      "memory": [
+        {
+          "id": "65468920-45d5-47e2-a543-7930d135ddf1",
+          "projectId": "13d2099b-14f2-45b1-aaf5-973e6f76ea8d",
+          "title": "Project workspace initialized: building in chennai",
+          "description": "Workspace created by babu (Project Delivery Manager). Live coordination layer active.",
+          "type": "milestone",
+          "actor": "babu",
+          "tags": [
+            "Project Setup",
+            "Project Management"
+          ],
+          "createdAt": "2026-09-14 02:28:54.883"
+        }
+      ]
+    },
+    "11111111-2222-3333-4444-555555555555": {
+      "project": {
+        "id": "11111111-2222-3333-4444-555555555555",
+        "name": "The Grand Vista Luxury Villa",
+        "description": "14,500 sq ft contemporary architectural villa featuring multi-level cantilevered living spaces, panoramic motorized glazing, infinity pool, subterranean wine cellar & private theatre, smart home automation, bespoke Italian travertine & teak finishes, and geothermal HVAC.",
+        "location": "42 Crestline Ridge, Hill Country Estates",
+        "phase": "Superstructure & MEP Rough-In",
+        "status": "Attention required",
+        "progress": 54,
+        "ownerId": "00000000-1111-2222-3333-444444444444",
+        "isDemo": true,
+        "updatedAt": "2026-09-14T14:37:57.145Z"
+      },
+      "users": [
+        {
+          "id": "00000000-1111-2222-3333-444444444444",
+          "name": "David Chen",
+          "email": "david.chen@apex-cm.com",
+          "passwordHash": "$2a$10$w3aJ...",
+          "role": "admin",
+          "projectId": "11111111-2222-3333-4444-555555555555"
+        }
+      ],
+      "stakeholders": [
+        {
+          "id": "stk-1",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "name": "David Chen",
+          "initials": "DC",
+          "role": "Project Delivery Manager",
+          "discipline": "Project Management",
+          "company": "Apex Construction Management",
+          "email": "david.chen@apex-cm.com",
+          "phone": "+1 (512) 555-0101",
+          "whatsapp": "+15125550101",
+          "status": "online",
+          "ownedCount": 3,
+          "affectedByCount": 4,
+          "raci": {
+            "Subterranean Foundation & Retaining Walls": "A",
+            "Cantilevered Superstructure & Slabs": "A",
+            "Motorized Slim-Profile Glazing": "A",
+            "Geothermal HVAC & Hydronic Systems": "A",
+            "Italian Travertine & Architectural Finishes": "A",
+            "Smart Home KNX/Lutron Automation": "A",
+            "Infinity Edge Pool & Hydraulics": "A",
+            "Terraced Landscaping & Courtyards": "A"
+          }
+        },
+        {
+          "id": "stk-2",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "name": "Marcus Vance",
+          "initials": "MV",
+          "role": "Client / Property Owner",
+          "discipline": "Client",
+          "company": "Vance Holdings LLC",
+          "email": "marcus.vance@vanceholdings.com",
+          "phone": "+1 (512) 555-0102",
+          "whatsapp": "+15125550102",
+          "status": "online",
+          "ownedCount": 1,
+          "affectedByCount": 5,
+          "raci": {
+            "Subterranean Foundation & Retaining Walls": "I",
+            "Cantilevered Superstructure & Slabs": "I",
+            "Motorized Slim-Profile Glazing": "C",
+            "Geothermal HVAC & Hydronic Systems": "I",
+            "Italian Travertine & Architectural Finishes": "A",
+            "Smart Home KNX/Lutron Automation": "C",
+            "Infinity Edge Pool & Hydraulics": "C",
+            "Terraced Landscaping & Courtyards": "C"
+          }
+        },
+        {
+          "id": "stk-3",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "name": "Elena Rostova",
+          "initials": "ER",
+          "role": "Principal Architect & Design Lead",
+          "discipline": "Architecture",
+          "company": "Studio Rostova Architecture",
+          "email": "elena.rostova@studiorostova.com",
+          "phone": "+1 (512) 555-0103",
+          "whatsapp": "+15125550103",
+          "status": "in-meeting",
+          "ownedCount": 4,
+          "affectedByCount": 6,
+          "raci": {
+            "Subterranean Foundation & Retaining Walls": "C",
+            "Cantilevered Superstructure & Slabs": "C",
+            "Motorized Slim-Profile Glazing": "R",
+            "Geothermal HVAC & Hydronic Systems": "C",
+            "Italian Travertine & Architectural Finishes": "R",
+            "Smart Home KNX/Lutron Automation": "C",
+            "Infinity Edge Pool & Hydraulics": "C",
+            "Terraced Landscaping & Courtyards": "C"
+          }
+        },
+        {
+          "id": "stk-4",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "name": "Rajesh Patel",
+          "initials": "RP",
+          "role": "Lead Structural Engineer",
+          "discipline": "Structural",
+          "company": "Patel & Partners Engineering",
+          "email": "rajesh.patel@patelengineers.com",
+          "phone": "+1 (512) 555-0104",
+          "whatsapp": "+15125550104",
+          "status": "on-site",
+          "ownedCount": 3,
+          "affectedByCount": 4,
+          "raci": {
+            "Subterranean Foundation & Retaining Walls": "R",
+            "Cantilevered Superstructure & Slabs": "R",
+            "Motorized Slim-Profile Glazing": "C",
+            "Geothermal HVAC & Hydronic Systems": "C",
+            "Italian Travertine & Architectural Finishes": "I",
+            "Smart Home KNX/Lutron Automation": "I",
+            "Infinity Edge Pool & Hydraulics": "R",
+            "Terraced Landscaping & Courtyards": "I"
+          }
+        },
+        {
+          "id": "stk-5",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "name": "Sophia Lorenzi",
+          "initials": "SL",
+          "role": "Interior Architect & Finishes Specialist",
+          "discipline": "Interiors",
+          "company": "Lorenzi Atelier Milan",
+          "email": "sophia.lorenzi@lorenziatelier.com",
+          "phone": "+1 (512) 555-0105",
+          "whatsapp": "+15125550105",
+          "status": "online",
+          "ownedCount": 3,
+          "affectedByCount": 3,
+          "raci": {
+            "Subterranean Foundation & Retaining Walls": "I",
+            "Cantilevered Superstructure & Slabs": "I",
+            "Motorized Slim-Profile Glazing": "C",
+            "Geothermal HVAC & Hydronic Systems": "C",
+            "Italian Travertine & Architectural Finishes": "R",
+            "Smart Home KNX/Lutron Automation": "C",
+            "Infinity Edge Pool & Hydraulics": "C",
+            "Terraced Landscaping & Courtyards": "I"
+          }
+        },
+        {
+          "id": "stk-6",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "name": "Tariq Al-Mansoor",
+          "initials": "TA",
+          "role": "MEP & Geothermal Systems Lead",
+          "discipline": "MEP",
+          "company": "SmartSystems Engineering",
+          "email": "tariq.almansoor@smartsystems-eng.com",
+          "phone": "+1 (512) 555-0106",
+          "whatsapp": "+15125550106",
+          "status": "online",
+          "ownedCount": 3,
+          "affectedByCount": 5,
+          "raci": {
+            "Subterranean Foundation & Retaining Walls": "I",
+            "Cantilevered Superstructure & Slabs": "C",
+            "Motorized Slim-Profile Glazing": "I",
+            "Geothermal HVAC & Hydronic Systems": "R",
+            "Italian Travertine & Architectural Finishes": "C",
+            "Smart Home KNX/Lutron Automation": "R",
+            "Infinity Edge Pool & Hydraulics": "C",
+            "Terraced Landscaping & Courtyards": "C"
+          }
+        },
+        {
+          "id": "stk-7",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "name": "Carlos Gomez",
+          "initials": "CG",
+          "role": "General Site Superintendent",
+          "discipline": "Site Operations",
+          "company": "Apex BuildCorp",
+          "email": "carlos.gomez@apexbuildcorp.com",
+          "phone": "+1 (512) 555-0107",
+          "whatsapp": "+15125550107",
+          "status": "on-site",
+          "ownedCount": 4,
+          "affectedByCount": 6,
+          "raci": {
+            "Subterranean Foundation & Retaining Walls": "R",
+            "Cantilevered Superstructure & Slabs": "R",
+            "Motorized Slim-Profile Glazing": "R",
+            "Geothermal HVAC & Hydronic Systems": "R",
+            "Italian Travertine & Architectural Finishes": "R",
+            "Smart Home KNX/Lutron Automation": "R",
+            "Infinity Edge Pool & Hydraulics": "R",
+            "Terraced Landscaping & Courtyards": "R"
+          }
+        },
+        {
+          "id": "stk-8",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "name": "Liam Gallagher",
+          "initials": "LG",
+          "role": "Bespoke Glazing & Facade Specialist",
+          "discipline": "Facade",
+          "company": "VistaVision Architectural Glass",
+          "email": "liam.gallagher@vistavisionglass.com",
+          "phone": "+1 (512) 555-0108",
+          "whatsapp": "+15125550108",
+          "status": "offline",
+          "ownedCount": 2,
+          "affectedByCount": 4,
+          "raci": {
+            "Subterranean Foundation & Retaining Walls": "I",
+            "Cantilevered Superstructure & Slabs": "C",
+            "Motorized Slim-Profile Glazing": "R",
+            "Geothermal HVAC & Hydronic Systems": "I",
+            "Italian Travertine & Architectural Finishes": "I",
+            "Smart Home KNX/Lutron Automation": "I",
+            "Infinity Edge Pool & Hydraulics": "I",
+            "Terraced Landscaping & Courtyards": "I"
+          }
+        },
+        {
+          "id": "stk-9",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "name": "Sunita Rao",
+          "initials": "SR",
+          "role": "Landscape Architect & Hydraulics Consultant",
+          "discipline": "Landscape",
+          "company": "Terra Studio",
+          "email": "sunita.rao@terrastudio.com",
+          "phone": "+1 (512) 555-0109",
+          "whatsapp": "+15125550109",
+          "status": "in-meeting",
+          "ownedCount": 2,
+          "affectedByCount": 3,
+          "raci": {
+            "Subterranean Foundation & Retaining Walls": "C",
+            "Cantilevered Superstructure & Slabs": "I",
+            "Motorized Slim-Profile Glazing": "I",
+            "Geothermal HVAC & Hydronic Systems": "C",
+            "Italian Travertine & Architectural Finishes": "C",
+            "Smart Home KNX/Lutron Automation": "I",
+            "Infinity Edge Pool & Hydraulics": "R",
+            "Terraced Landscaping & Courtyards": "R"
+          }
+        }
+      ],
+      "activities": [
+        {
+          "id": "act-1",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Subterranean Bedrock Excavation & Retaining Walls",
+          "type": "Civil Works",
+          "discipline": "Civil",
+          "owner": "Carlos Gomez",
+          "ownerInitials": "CG",
+          "status": "complete",
+          "dueDate": "2026-08-10",
+          "location": "Lower Foundation Slope",
+          "criticalPath": false,
+          "dependencyCount": 0
+        },
+        {
+          "id": "act-2",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Foundation Seismic Anchor Bolts & Dual Waterproofing",
+          "type": "Civil Works",
+          "discipline": "Civil",
+          "owner": "Carlos Gomez",
+          "ownerInitials": "CG",
+          "status": "complete",
+          "dueDate": "2026-08-22",
+          "location": "Sub-grade Basement",
+          "criticalPath": false,
+          "dependencyCount": 1
+        },
+        {
+          "id": "act-3",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Lower Ground Wine Cellar & Home Theatre Concrete Shell",
+          "type": "Structural Framing",
+          "discipline": "Structural",
+          "owner": "Carlos Gomez",
+          "ownerInitials": "CG",
+          "status": "complete",
+          "dueDate": "2026-09-02",
+          "location": "Basement Level B1",
+          "criticalPath": false,
+          "dependencyCount": 1
+        },
+        {
+          "id": "act-4",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Level 1 Cantilevered Living Room Post-Tensioned Slab",
+          "type": "Deliverable",
+          "discipline": "Structural",
+          "owner": "Rajesh Patel",
+          "ownerInitials": "RP",
+          "status": "in-progress",
+          "dueDate": "2026-09-18",
+          "location": "Level 1 Great Room",
+          "criticalPath": true,
+          "dependencyCount": 2
+        },
+        {
+          "id": "act-5",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Level 2 Master Suite Structural Steel Lintel & Framing",
+          "type": "Deliverable",
+          "discipline": "Structural",
+          "owner": "Rajesh Patel",
+          "ownerInitials": "RP",
+          "status": "blocked",
+          "dueDate": "2026-09-20",
+          "location": "Level 2 Master Suite",
+          "criticalPath": true,
+          "dependencyCount": 2,
+          "blockedReason": "Blocked pending structural engineer sign-off on 12-meter window lintel deflection tolerance under wind load."
+        },
+        {
+          "id": "act-6",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Motorized Floor-to-Ceiling Slim Pocket Glazing Fabrication",
+          "type": "Milestone",
+          "discipline": "Facade",
+          "owner": "Liam Gallagher",
+          "ownerInitials": "LG",
+          "status": "at-risk",
+          "dueDate": "2026-09-25",
+          "location": "Off-site Factory / Level 2",
+          "criticalPath": true,
+          "dependencyCount": 1,
+          "blockedReason": "Awaiting final Level 2 structural deflection confirmation before factory laser extrusion cutting."
+        },
+        {
+          "id": "act-7",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Geothermal Borehole Loop Drilling & Manifold Rough-in",
+          "type": "Deliverable",
+          "discipline": "MEP",
+          "owner": "Tariq Al-Mansoor",
+          "ownerInitials": "TA",
+          "status": "in-progress",
+          "dueDate": "2026-09-22",
+          "location": "North Courtyard Borefield",
+          "criticalPath": false,
+          "dependencyCount": 1
+        },
+        {
+          "id": "act-8",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Level 1 Hydronic Underfloor Heating & Plumbing Sleeves",
+          "type": "Deliverable",
+          "discipline": "MEP",
+          "owner": "Tariq Al-Mansoor",
+          "ownerInitials": "TA",
+          "status": "at-risk",
+          "dueDate": "2026-09-17",
+          "location": "Level 1 Floor Grid",
+          "criticalPath": false,
+          "dependencyCount": 1,
+          "blockedReason": "Core sleeve heights clash with post-tensioned tendon anchor zone TB-01."
+        },
+        {
+          "id": "act-9",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Roman Travertine Pool Deck & Exterior Coping Supply",
+          "type": "Deliverable",
+          "discipline": "Interiors",
+          "owner": "Sophia Lorenzi",
+          "ownerInitials": "SL",
+          "status": "pending",
+          "dueDate": "2026-10-05",
+          "location": "South Infinity Terrace",
+          "criticalPath": false,
+          "dependencyCount": 1
+        },
+        {
+          "id": "act-10",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Infinity Edge Pool Cantilever Drainage & Hydraulics",
+          "type": "Deliverable",
+          "discipline": "Landscape",
+          "owner": "Sunita Rao",
+          "ownerInitials": "SR",
+          "status": "in-progress",
+          "dueDate": "2026-09-28",
+          "location": "South Pool Basin",
+          "criticalPath": false,
+          "dependencyCount": 2
+        },
+        {
+          "id": "act-11",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Smart Home Central KNX/Lutron Automation Rack Conduits",
+          "type": "Milestone",
+          "discipline": "MEP",
+          "owner": "Tariq Al-Mansoor",
+          "ownerInitials": "TA",
+          "status": "in-progress",
+          "dueDate": "2026-09-26",
+          "location": "Lower Mechanical Hub",
+          "criticalPath": false,
+          "dependencyCount": 1
+        },
+        {
+          "id": "act-12",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Teak Architectural Soffits & Master Suite Custom Millwork",
+          "type": "Deliverable",
+          "discipline": "Interiors",
+          "owner": "Sophia Lorenzi",
+          "ownerInitials": "SL",
+          "status": "pending",
+          "dueDate": "2026-10-15",
+          "location": "Level 2 Cantilever Soffits",
+          "criticalPath": false,
+          "dependencyCount": 1
+        }
+      ],
+      "dependencies": [
+        {
+          "id": "dep-1",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "fromId": "act-1",
+          "fromTitle": "Subterranean Bedrock Excavation & Retaining Walls",
+          "toId": "act-2",
+          "toTitle": "Foundation Seismic Anchor Bolts & Dual Waterproofing",
+          "type": "blocks",
+          "status": "resolved"
+        },
+        {
+          "id": "dep-2",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "fromId": "act-2",
+          "fromTitle": "Foundation Seismic Anchor Bolts & Dual Waterproofing",
+          "toId": "act-3",
+          "toTitle": "Lower Ground Wine Cellar & Home Theatre Concrete Shell",
+          "type": "blocks",
+          "status": "resolved"
+        },
+        {
+          "id": "dep-3",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "fromId": "act-3",
+          "fromTitle": "Lower Ground Wine Cellar & Home Theatre Concrete Shell",
+          "toId": "act-4",
+          "toTitle": "Level 1 Cantilevered Living Room Post-Tensioned Slab",
+          "type": "blocks",
+          "status": "resolved"
+        },
+        {
+          "id": "dep-4",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "fromId": "act-4",
+          "fromTitle": "Level 1 Cantilevered Living Room Post-Tensioned Slab",
+          "toId": "act-5",
+          "toTitle": "Level 2 Master Suite Structural Steel Lintel & Framing",
+          "type": "blocks",
+          "status": "active"
+        },
+        {
+          "id": "dep-5",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "fromId": "act-5",
+          "fromTitle": "Level 2 Master Suite Structural Steel Lintel & Framing",
+          "toId": "act-6",
+          "toTitle": "Motorized Floor-to-Ceiling Slim Pocket Glazing Fabrication",
+          "type": "blocks",
+          "status": "active"
+        },
+        {
+          "id": "dep-6",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "fromId": "act-4",
+          "fromTitle": "Level 1 Cantilevered Living Room Post-Tensioned Slab",
+          "toId": "act-8",
+          "toTitle": "Level 1 Hydronic Underfloor Heating & Plumbing Sleeves",
+          "type": "blocks",
+          "status": "active"
+        },
+        {
+          "id": "dep-7",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "fromId": "act-4",
+          "fromTitle": "Level 1 Cantilevered Living Room Post-Tensioned Slab",
+          "toId": "act-10",
+          "toTitle": "Infinity Edge Pool Cantilever Drainage & Hydraulics",
+          "type": "blocks",
+          "status": "active"
+        },
+        {
+          "id": "dep-8",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "fromId": "act-7",
+          "fromTitle": "Geothermal Borehole Loop Drilling & Manifold Rough-in",
+          "toId": "act-8",
+          "toTitle": "Level 1 Hydronic Underfloor Heating & Plumbing Sleeves",
+          "type": "relates-to",
+          "status": "active"
+        },
+        {
+          "id": "dep-9",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "fromId": "act-6",
+          "fromTitle": "Motorized Floor-to-Ceiling Slim Pocket Glazing Fabrication",
+          "toId": "act-12",
+          "toTitle": "Teak Architectural Soffits & Master Suite Custom Millwork",
+          "type": "blocks",
+          "status": "active"
+        },
+        {
+          "id": "dep-10",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "fromId": "act-10",
+          "fromTitle": "Infinity Edge Pool Cantilever Drainage & Hydraulics",
+          "toId": "act-9",
+          "toTitle": "Roman Travertine Pool Deck & Exterior Coping Supply",
+          "type": "blocks",
+          "status": "active"
+        }
+      ],
+      "changes": [
+        {
+          "id": "chg-1",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Master Suite 12-Meter Motorized Panoramic Pocket Glazing Expansion",
+          "summary": "Marcus Vance requested expanding the Master Suite west wall from punch windows to a continuous 12m motorized glass pocket slider. Requires structural steel lintel deflection review (L/600 limit) and floor drainage trench detailing.",
+          "status": "active",
+          "severity": "high",
+          "createdBy": "Marcus Vance",
+          "discipline": "Architecture",
+          "affectedCount": 4,
+          "rawSignal": "Marcus standup request: We need the entire 12-meter west wall to slide into hidden pocket walls so the bedroom flows seamlessly onto the upper cantilever terrace. Please coordinate with Liam and Rajesh immediately.",
+          "createdAt": "2026-09-13T09:00:00.000Z"
+        },
+        {
+          "id": "chg-2",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Underfloor Hydronic Sleeve Clash with Post-Tensioned Tendon Zone TB-01",
+          "summary": "Site inspection revealed that MEP sanitary and hydronic conduit sleeves at Grid D-3 fall within 400mm of the primary post-tensioned tendon anchor plate. Carlos Gomez halted sleeve drilling to prevent tendon strand nicking.",
+          "status": "active",
+          "severity": "critical",
+          "createdBy": "Carlos Gomez",
+          "discipline": "MEP",
+          "affectedCount": 3,
+          "rawSignal": "Urgent WhatsApp from Carlos: Rebar team found MEP plastic sleeves directly obstructing tendon anchor duct on TB-01. Tariq needs to offset sleeves 500mm south before tomorrow's inspection.",
+          "createdAt": "2026-09-13T14:30:00.000Z"
+        },
+        {
+          "id": "chg-3",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Infinity Pool Cantilever Overflow Weep Hole Rerouting",
+          "summary": "Hydraulics review showed pool surge tank drainage path crossed over the lower wine cellar ceiling waterproof envelope. Sunita Rao rerouted discharge piping through the north retaining wall gravity swale.",
+          "status": "resolved",
+          "severity": "medium",
+          "createdBy": "Sunita Rao",
+          "discipline": "Landscape",
+          "affectedCount": 2,
+          "createdAt": "2026-09-11T16:00:00.000Z"
+        },
+        {
+          "id": "chg-4",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Roman Cross-Cut Travertine Finish Substitution for Pool Deck",
+          "summary": "Client and interior architect approved substituting honed cross-cut Roman Travertine for Greek Thassos marble to achieve an R11 non-slip rating and reduce summer surface heat by 14°C.",
+          "status": "active",
+          "severity": "medium",
+          "createdBy": "Sophia Lorenzi",
+          "discipline": "Interiors",
+          "affectedCount": 2,
+          "createdAt": "2026-09-12T11:00:00.000Z"
+        },
+        {
+          "id": "chg-5",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "KNX Automation High-Voltage Cable Separation in Cantilever Soffit",
+          "summary": "Low-voltage KNX lighting control cables were routed in shared conduit with 240V heat-pump circuits. Tariq issued change order to install shielded isolated metal raceway to eliminate signal induction flicker.",
+          "status": "active",
+          "severity": "low",
+          "createdBy": "Tariq Al-Mansoor",
+          "discipline": "MEP",
+          "affectedCount": 1,
+          "createdAt": "2026-09-10T10:00:00.000Z"
+        }
+      ],
+      "actions": [
+        {
+          "id": "actn-1",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Issue Structural Calculation Sheet for 12m Steel Lintel Deflection",
+          "owner": "Rajesh Patel",
+          "ownerInitials": "RP",
+          "status": "todo",
+          "dueDate": "2026-09-16",
+          "source": "Change: Master Suite Glazing",
+          "priority": "urgent"
+        },
+        {
+          "id": "actn-2",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Offset Level 1 Hydronic Conduits 500mm South of Tendon Anchor TB-01",
+          "owner": "Tariq Al-Mansoor",
+          "ownerInitials": "TA",
+          "status": "in-progress",
+          "dueDate": "2026-09-17",
+          "source": "Site Standup: Slab Sleeves",
+          "priority": "high"
+        },
+        {
+          "id": "actn-3",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Confirm Motorized Glass Pocket Cavity Dimensions with Millwork Sub",
+          "owner": "Liam Gallagher",
+          "ownerInitials": "LG",
+          "status": "todo",
+          "dueDate": "2026-09-18",
+          "source": "Architecture Coordination",
+          "priority": "normal"
+        },
+        {
+          "id": "actn-4",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Submit Roman Travertine Wet-Slip Pendulum Test Report (R11 Rating)",
+          "owner": "Sophia Lorenzi",
+          "ownerInitials": "SL",
+          "status": "done",
+          "dueDate": "2026-09-14",
+          "source": "Client Finishes Selection",
+          "priority": "normal"
+        },
+        {
+          "id": "actn-5",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Pour Concrete Test Cylinders for Level 1 Post-Tensioned Slab 7-Day Break",
+          "owner": "Carlos Gomez",
+          "ownerInitials": "CG",
+          "status": "in-progress",
+          "dueDate": "2026-09-19",
+          "source": "Quality Assurance",
+          "priority": "high"
+        },
+        {
+          "id": "actn-6",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Review Geothermal Manifold Flow Sensor Calibration",
+          "owner": "Tariq Al-Mansoor",
+          "ownerInitials": "TA",
+          "status": "todo",
+          "dueDate": "2026-09-23",
+          "source": "MEP Commissioning Plan",
+          "priority": "low"
+        },
+        {
+          "id": "actn-7",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Coordinate Pool Coping Waterstop Detail with Landscape Architect",
+          "owner": "Sunita Rao",
+          "ownerInitials": "SR",
+          "status": "in-progress",
+          "dueDate": "2026-09-20",
+          "source": "Pool Drainage Review",
+          "priority": "normal"
+        },
+        {
+          "id": "actn-8",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Schedule City Structural Frame Inspection for Level 1 Living Room",
+          "owner": "David Chen",
+          "ownerInitials": "DC",
+          "status": "todo",
+          "dueDate": "2026-09-21",
+          "source": "PMC Schedule Control",
+          "priority": "high"
+        }
+      ],
+      "approvals": [
+        {
+          "id": "app-1",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Master Suite 12m Glazing Structural Steel Lintel Sign-Off",
+          "requester": "Liam Gallagher",
+          "requesterInitials": "LG",
+          "approver": "Rajesh Patel",
+          "status": "pending",
+          "dueDate": "2026-09-16",
+          "category": "Structural Engineering Certification",
+          "impactSummary": "Unblocks Level 2 structural steel framing and authorizes factory cutting of $180,000 glass extrusion panels."
+        },
+        {
+          "id": "app-2",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Roman Cross-Cut Travertine Finish Sample Board Sign-Off",
+          "requester": "Sophia Lorenzi",
+          "requesterInitials": "SL",
+          "approver": "Marcus Vance",
+          "status": "pending",
+          "dueDate": "2026-09-18",
+          "category": "Client Aesthetic & Budget Sign-off",
+          "impactSummary": "Authorizes sea-freight release of 4,200 sq ft Italian travertine tiles from Carrara port."
+        },
+        {
+          "id": "app-3",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Level 1 Post-Tensioned Tendon Stressing Protocol Sign-Off",
+          "requester": "Carlos Gomez",
+          "requesterInitials": "CG",
+          "approver": "Rajesh Patel",
+          "status": "approved",
+          "dueDate": "2026-09-12",
+          "category": "Structural Safety Certification",
+          "impactSummary": "Certified tendon elongation parameters; authorized living room cantilever formwork stripping.",
+          "completedAt": "2026-09-12T14:30:00.000Z"
+        },
+        {
+          "id": "app-4",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Geothermal Loop Vertical Borehole Environmental Permit Sign-Off",
+          "requester": "Tariq Al-Mansoor",
+          "requesterInitials": "TA",
+          "approver": "David Chen",
+          "status": "approved",
+          "dueDate": "2026-09-08",
+          "category": "Environmental & MEP Permit",
+          "impactSummary": "City environmental conservation board granted zero-discharge closed-loop drilling clearance.",
+          "completedAt": "2026-09-08T11:15:00.000Z"
+        },
+        {
+          "id": "app-5",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Infinity Pool Cantilever Structural Rib Rebar Submittal",
+          "requester": "Carlos Gomez",
+          "requesterInitials": "CG",
+          "approver": "Rajesh Patel",
+          "status": "pending",
+          "dueDate": "2026-09-19",
+          "category": "Structural Submittal",
+          "impactSummary": "Required prior to scheduling concrete pump truck for pool shell on Friday."
+        },
+        {
+          "id": "app-6",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Lutron HomeWorks Central Rack Room Dedicated Cooling Spec",
+          "requester": "Tariq Al-Mansoor",
+          "requesterInitials": "TA",
+          "approver": "David Chen",
+          "status": "approved",
+          "dueDate": "2026-09-10",
+          "category": "Low-Voltage Systems Approval",
+          "impactSummary": "Approved dedicated split fan-coil unit to prevent thermal throttling of central home automation processors.",
+          "completedAt": "2026-09-10T16:00:00.000Z"
+        }
+      ],
+      "alerts": [
+        {
+          "id": "alt-1",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Critical Blocker: Level 2 Master Suite Structural Lintel Approval Pending",
+          "description": "Liam Gallagher's glazing fabrication is blocked until Rajesh Patel approves the structural deflection calculation.",
+          "type": "approval",
+          "severity": "critical",
+          "acknowledged": false
+        },
+        {
+          "id": "alt-2",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Trade Clash: Level 1 MEP Sleeves Intersecting Post-Tensioned Tendon TB-01",
+          "description": "Carlos Gomez halted slab coring until Tariq Al-Mansoor offsets MEP conduit sleeves by 500mm.",
+          "type": "impact",
+          "severity": "high",
+          "acknowledged": false
+        },
+        {
+          "id": "alt-3",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Lead Time Alert: Travertine Shipping Container Cutoff on Friday",
+          "description": "Italian supplier requires Marcus Vance's sample sign-off by Thursday 5 PM to make the Mediterranean container departure.",
+          "type": "deadline",
+          "severity": "high",
+          "acknowledged": false
+        },
+        {
+          "id": "alt-4",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Permit Milestones: City Frame Inspection Scheduled for Monday",
+          "description": "David Chen has scheduled the municipal building inspector for Level 1 living room framing sign-off.",
+          "type": "info",
+          "severity": "medium",
+          "acknowledged": true
+        },
+        {
+          "id": "alt-5",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Geothermal Boreholes Complete: 8 of 8 Loops Pressure Tested",
+          "description": "Tariq Al-Mansoor reported 100 PSI static pressure hold for 48 hours without leakage.",
+          "type": "info",
+          "severity": "low",
+          "acknowledged": true
+        },
+        {
+          "id": "alt-6",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Pool Shell Concrete Pump Reservation Locked",
+          "description": "Batch plant scheduled for 60 cubic yards 5,000 PSI waterproof mix contingent on rib rebar sign-off.",
+          "type": "deadline",
+          "severity": "medium",
+          "acknowledged": false
+        }
+      ],
+      "memory": [
+        {
+          "id": "mem-4",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Client Master Suite 12-Meter Panoramic Opening Request",
+          "description": "Marcus Vance submitted Change CH-101 requesting expansion of master suite bedroom fenestration to a continuous 12m motorized glass pocket slider. Elena Rostova and Liam Gallagher confirmed feasibility subject to steel lintel deflection check.",
+          "type": "change",
+          "actor": "Marcus Vance",
+          "tags": [
+            "Architecture",
+            "Client Change",
+            "Master Suite",
+            "Glazing",
+            "CH-101"
+          ],
+          "createdAt": "2026-09-13T09:00:00.000Z"
+        },
+        {
+          "id": "mem-3",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Living Room Cantilever Post-Tensioned Tendon Specification Rule",
+          "description": "Rajesh Patel signed off on the parabolic post-tensioning tendon layout with mandatory project rule: No trade or subcontractor may drill core holes within 1.2 meters of transfer beam edge TB-01 without explicit written approval.",
+          "type": "approval",
+          "actor": "Rajesh Patel",
+          "tags": [
+            "Structural",
+            "Cantilever",
+            "Approval",
+            "Critical Rule",
+            "Safety"
+          ],
+          "createdAt": "2026-09-12T14:30:00.000Z"
+        },
+        {
+          "id": "mem-5",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Roman Cross-Cut Honed Travertine Finish Approved for Pool Deck",
+          "description": "Sophia Lorenzi presented sample board #V-104 comparing Greek Thassos marble vs. Roman Cross-Cut Travertine. Marcus Vance selected Travertine for superior wet-slip friction (R11) and thermal comfort under direct afternoon sunlight.",
+          "type": "decision",
+          "actor": "Sophia Lorenzi",
+          "tags": [
+            "Interiors",
+            "Materials",
+            "Pool",
+            "Finishes",
+            "Client Approval"
+          ],
+          "createdAt": "2026-09-12T11:00:00.000Z"
+        },
+        {
+          "id": "mem-7",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Dedicated Cooling Unit Approved for Central Automation Equipment Room",
+          "description": "David Chen and Tariq Al-Mansoor approved adding a dedicated 1.5-ton ductless fan coil for the central KNX/Lutron AV equipment rack room to eliminate equipment thermal throttling risk in summer.",
+          "type": "approval",
+          "actor": "David Chen",
+          "tags": [
+            "MEP",
+            "Automation",
+            "Approval",
+            "Cooling"
+          ],
+          "createdAt": "2026-09-10T16:00:00.000Z"
+        },
+        {
+          "id": "mem-1",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Geothermal HVAC Loop Selection Over Air-Source Split Units",
+          "description": "Marcus Vance and Tariq Al-Mansoor confirmed selection of 8 vertical closed-loop geothermal boreholes drilled 90m deep. Rationale: Eliminates exterior condenser fan noise from the hillside patio and allows pure, uninterrupted architectural soffit lines on the cantilevered terraces.",
+          "type": "decision",
+          "actor": "Marcus Vance",
+          "tags": [
+            "MEP",
+            "HVAC",
+            "Client Decision",
+            "Geothermal",
+            "Architecture"
+          ],
+          "createdAt": "2026-09-08T10:00:00.000Z"
+        },
+        {
+          "id": "mem-8",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Level 1 Living Room Cantilever Concrete Pour Completed",
+          "description": "Carlos Gomez successfully executed 8-hour continuous monolithic pour of 95 cubic yards of high-early 6,000 PSI concrete for the main cantilevered living room terrace under ideal weather conditions.",
+          "type": "milestone",
+          "actor": "Carlos Gomez",
+          "tags": [
+            "Site",
+            "Concrete",
+            "Milestone",
+            "Cantilever"
+          ],
+          "createdAt": "2026-09-06T18:00:00.000Z"
+        },
+        {
+          "id": "mem-6",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Wine Cellar Sump Vent Rerouted Around Primary Grade Beam",
+          "description": "During basement rough-in, plumbing vent clashed with structural grade beam GB-02. Tariq Al-Mansoor rerouted drainage vent through service trench B-3 with 2% slope, preserving grade beam steel reinforcement integrity.",
+          "type": "issue",
+          "actor": "Tariq Al-Mansoor",
+          "tags": [
+            "MEP",
+            "Civil",
+            "Resolution",
+            "Wine Cellar"
+          ],
+          "createdAt": "2026-09-04T15:00:00.000Z"
+        },
+        {
+          "id": "mem-2",
+          "projectId": "11111111-2222-3333-4444-555555555555",
+          "title": "Subterranean Foundation & Bedrock Anchor Inspection Sign-Off",
+          "description": "City building official and Rajesh Patel certified 24 high-tensile rock anchors grouted 6 meters into dense limestone strata. Tensile load tests passed at 220% of design load without displacement, formally closing substructure civil phase.",
+          "type": "milestone",
+          "actor": "Rajesh Patel",
+          "tags": [
+            "Civil",
+            "Foundation",
+            "Inspection",
+            "Milestone",
+            "Structural"
+          ],
+          "createdAt": "2026-08-25T14:00:00.000Z"
+        }
+      ]
+    }
+  },
+  "users": [
+    {
+      "id": "2d104205-fae7-46c4-b416-660ae68b6b72",
+      "email": "demo-1789321921663@coordination.demo",
+      "passwordHash": "$2b$12$mwdDjlSQUkuwlIjsH6iml.B6nLlwpqNH07hMr4iH.HoxSH7UqFAMq",
+      "name": "Demo User",
+      "role": "member",
+      "projectId": "ddb352ba-447d-4459-af33-6593abf22a56",
+      "createdAt": "2026-09-13 17:52:06.540574"
+    },
+    {
+      "id": "fedf5802-9be0-4cb6-a503-d70501d983ff",
+      "email": "test1789321929680@test.com",
+      "passwordHash": "$2b$12$zplpZmNupUTvfmqWKON7O.lhXMqL6oZqYuPjow6ky8aMm5pv5TAY2",
+      "name": "Test User",
+      "role": "admin",
+      "projectId": "fbda7029-a26c-48d9-a8bc-761800cf9172",
+      "createdAt": "2026-09-13 17:52:10.972383"
+    },
+    {
+      "id": "156e2054-9320-459c-91b5-eff74cd6079d",
+      "email": "logintest1789321931321@test.com",
+      "passwordHash": "$2b$12$oc6O8PYaNn9o2NN3hUvmA.QBBgEWiDOQWUX7WOPEBX2URJUETF3lq",
+      "name": "Login Test",
+      "role": "admin",
+      "projectId": "7854014f-2554-468b-a593-f86e5dec56ff",
+      "createdAt": "2026-09-13 17:52:13.081776"
+    },
+    {
+      "id": "cc2bbd6a-e9cc-4841-8049-c120c8894d92",
+      "email": "demo@coordination.demo",
+      "passwordHash": "$2b$12$MeOyNwKmMqWgpEIZTfVnEuFrJ8r6eLodIc/yQ15tDYVApWlfUVjre",
+      "name": "Demo User",
+      "role": "member",
+      "projectId": "f5b132dd-2aca-472e-af82-21f26308b85e",
+      "createdAt": "2026-09-13 18:24:52.094906"
+    },
+    {
+      "id": "f61fbe1f-caa2-4e82-9df8-3bd01162932b",
+      "email": "ramlokesh954@gmail.com",
+      "passwordHash": "$2b$12$SRzOW7dx.EKJGh/Erv89F.J/pF4UDATerzcfjEJtHlhA9rZXxIAvu",
+      "name": "Lokesh Ram",
+      "role": "admin",
+      "projectId": "86050d48-2369-4cc1-b05e-3179b4d7abfe",
+      "createdAt": "2026-09-13 18:35:35.632241"
+    },
+    {
+      "id": "28b23998-87f8-425a-9754-42c38c1dfef8",
+      "email": "lokesh@gmail.com",
+      "passwordHash": "$2b$12$vhdCVQCoE23U.msyqDm5FefIkTCO2tDM/Va6qGtDpfsvTFfPKQa0K",
+      "name": "Lokesh Ram",
+      "role": "admin",
+      "projectId": "ce17c044-358a-45f9-b74c-ad081fdafa8d",
+      "createdAt": "2026-09-13 18:42:14.685971"
+    },
+    {
+      "id": "eb3008e7-c674-447c-9527-e37374473098",
+      "email": "isolation-a-1789325189@example.test",
+      "passwordHash": "$2b$12$CXLcdxAZQ4HrM369cQH1juufxFqVDMJAXiFhZycwzt9V4zKXWiwM6",
+      "name": "Isolation A",
+      "role": "admin",
+      "projectId": "3081271c-d050-4355-9450-9342dee101ff",
+      "createdAt": "2026-09-13 18:46:34.367412"
+    },
+    {
+      "id": "93bd9dc0-a01d-4e5c-93dd-9d2842103a78",
+      "email": "isolation-b-1789325189@example.test",
+      "passwordHash": "$2b$12$NdFR9BV6XB814XoGBSV2jufThVgDpr4nll9VEUbmjQXVK5S7RfYv6",
+      "name": "Isolation B",
+      "role": "admin",
+      "projectId": "22b9198e-d122-4dfe-bba8-171020f3d70d",
+      "createdAt": "2026-09-13 18:46:36.243236"
+    },
+    {
+      "id": "b3fe840c-b021-49d3-b4af-6660838bbf55",
+      "email": "viewer-check-1789325623929@example.test",
+      "passwordHash": "$2b$12$b6dtV2tLJyQSuKHrfLiMVOnScSTExuRPsUy0ZQLLmdBfxEvItqGNG",
+      "name": "Viewer Check",
+      "role": "viewer",
+      "projectId": "782cb5a8-cbf0-41b4-8323-09163c048161",
+      "createdAt": "2026-09-13 18:53:45.893485"
+    },
+    {
+      "id": "00000000-1111-2222-3333-444444444444",
+      "email": "david.chen@apex-cm.com",
+      "passwordHash": "$2a$10$w3aJDemoPasswordHashPlaceHolder",
+      "name": "David Chen",
+      "role": "admin",
+      "projectId": "11111111-2222-3333-4444-555555555555",
+      "createdAt": "2026-09-14 11:23:39.868247"
+    },
+    {
+      "id": "cc51723c-8784-4284-a8d2-32e9b613fdf7",
+      "email": "lead.architect.1789385029782@studio-arch.com",
+      "passwordHash": "$2b$12$0XF29RyHFtpFNRUwTQf0Y.SuvD2X7IVi1GBI/KpCCmuQk7IYMQyBq",
+      "name": "Vikram Malhotra",
+      "role": "admin",
+      "projectId": "4615bea4-62ce-483b-ad81-59648917e476",
+      "createdAt": "2026-09-14 11:23:51.607447"
+    },
+    {
+      "id": "8665b6ec-ba2c-40b5-acd4-db0ef6c60aee",
+      "email": "lead.architect.1789385092783@studio-arch.com",
+      "passwordHash": "$2b$12$0WrNEEQFlyNo1ioAMemIJ.rXvABz/Uf1AkCKCh6t7vZa522mLYvWK",
+      "name": "Vikram Malhotra",
+      "role": "admin",
+      "projectId": "e2afcaf5-e345-4a67-a073-682635483c3c",
+      "createdAt": "2026-09-14 11:24:54.593647"
+    },
+    {
+      "id": "b306ca57-15d2-4cbb-a7b0-e910ebf23e6f",
+      "email": "lead.architect.1789385198094@studio-arch.com",
+      "passwordHash": "$2b$12$5IZeOUmrk.GRenaAaaTtweE/XIFB/FZdWc6gOijPFskk.aXA4Rx9C",
+      "name": "Vikram Malhotra",
+      "role": "admin",
+      "projectId": "6463785c-ba8e-454c-ac79-39e16af471d7",
+      "createdAt": "2026-09-14 11:26:39.837731"
+    },
+    {
+      "id": "405211f5-aeb1-4b18-ae82-a53a88cdbec9",
+      "email": "babu@gmail.com",
+      "passwordHash": "$2b$12$j0kAvDPwQzj/5xRQuPaKte.BNHV.MAsqCjeerqAz47b7QP7Ye0g1.",
+      "name": "babu",
+      "role": "admin",
+      "projectId": "13d2099b-14f2-45b1-aaf5-973e6f76ea8d",
+      "createdAt": "2026-09-14 11:29:24.354808"
+    }
+  ]
+}

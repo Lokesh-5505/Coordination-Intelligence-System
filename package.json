@@ -3,16 +3,25 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "preinstall": "sh -c 'rm -f package-lock.json yarn.lock; case \"$npm_config_user_agent\" in pnpm/*) ;; *) echo \"Use pnpm instead\" >&2; exit 1 ;; esac'",
+    "dev": "node scripts/dev.mjs",
+    "dev:api": "pnpm --filter @workspace/api-server run dev",
+    "dev:frontend": "pnpm --filter @workspace/coordination-intelligence run dev",
+    "start": "node --enable-source-maps server/dist/index.mjs",
+    "build:client": "pnpm --filter @workspace/coordination-intelligence run build",
+    "build:server": "pnpm --filter @workspace/api-server run build",
+    "preinstall": "node -e \"if(process.env.npm_config_user_agent && !process.env.npm_config_user_agent.startsWith('pnpm/')){console.error('Use pnpm instead');process.exit(1)}\"",
     "build": "pnpm run typecheck && pnpm -r --if-present run build",
     "typecheck:libs": "tsc --build",
-    "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./artifacts/**\" --filter \"./scripts\" --if-present run typecheck"
+    "typecheck": "pnpm run typecheck:libs && pnpm -r --filter \"./client\" --filter \"./server\" --filter \"./scripts\" --if-present run typecheck"
   },
   "private": true,
   "dependencies": {
     "@replit/connectors-sdk": "^0.4.3"
   },
   "devDependencies": {
+    "@rollup/rollup-win32-x64-msvc": "4.63.1",
+    "@tailwindcss/oxide-win32-x64-msvc": "4.3.3",
+    "lightningcss-win32-x64-msvc": "1.32.0",
     "prettier": "^3.9.6",
     "typescript": "~5.9.3"
   }

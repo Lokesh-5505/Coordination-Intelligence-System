@@ -1,49 +1,54 @@
-# See https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+# Dependencies
+node_modules/
+.pnpm-store/
 
-# compiled output
-dist
-tmp
-out-tsc
+# Compiled and build outputs
+dist/
+**/dist/
+build/
+out/
+tmp/
+out-tsc/
+
+# Cloud deployment artifacts
+.vercel/
+.render/
+
+# Environment configurations (Never commit secrets)
+.env
+.env.*
+!.env.example
+
+# TypeScript cache & build info
 *.tsbuildinfo
-.expo
-.expo-shared
+**/*.tsbuildinfo
+.tsbuildinfo
 
-# dependencies
-node_modules
+# Logs & debugging
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
+# System & OS Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# IDE & Editor files
+.idea/
 *.sublime-workspace
-
-# IDE - VSCode
+.settings/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
-
-# System Files
-.DS_Store
-Thumbs.db
-
-.cursor/rules/nx-rules.mdc
-.github/instructions/nx.instructions.md
-
-# Replit
+# Internal workspace scratch / conversation
+.conversation/
+scratch/
 .cache/
 .local/

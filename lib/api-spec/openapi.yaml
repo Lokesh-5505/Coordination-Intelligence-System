@@ -222,7 +222,7 @@ paths:
                 items:
                   $ref: "#/components/schemas/Alert"
   /alerts/{alertId}/acknowledge:
-    post:
+    patch:
       operationId: acknowledgeAlert
       tags: [coordination]
       summary: Acknowledge an alert
@@ -356,7 +356,18 @@ components:
         affectedByCount: { type: integer }
     Activity:
       type: object
-      required: [id, title, type, owner, ownerInitials, status, dueDate, dependencyCount, blockedReason]
+      required:
+        [
+          id,
+          title,
+          type,
+          owner,
+          ownerInitials,
+          status,
+          dueDate,
+          dependencyCount,
+          blockedReason,
+        ]
       properties:
         id: { type: string }
         title: { type: string }
@@ -380,7 +391,17 @@ components:
         status: { type: string }
     Change:
       type: object
-      required: [id, title, summary, status, severity, createdBy, createdAt, affectedCount]
+      required:
+        [
+          id,
+          title,
+          summary,
+          status,
+          severity,
+          createdBy,
+          createdAt,
+          affectedCount,
+        ]
       properties:
         id: { type: string }
         title: { type: string }
@@ -399,7 +420,8 @@ components:
         severity: { type: string }
     ImpactItem:
       type: object
-      required: [id, label, kind, owner, ownerInitials, severity, reason, dueDate]
+      required:
+        [id, label, kind, owner, ownerInitials, severity, reason, dueDate]
       properties:
         id: { type: string }
         label: { type: string }
@@ -421,7 +443,17 @@ components:
         priority: { type: string }
     ImpactReport:
       type: object
-      required: [changeId, headline, explanation, scheduleImpact, severity, items, draftActions, approvals]
+      required:
+        [
+          changeId,
+          headline,
+          explanation,
+          scheduleImpact,
+          severity,
+          items,
+          draftActions,
+          approvals,
+        ]
       properties:
         changeId: { type: string }
         headline: { type: string }
@@ -439,7 +471,17 @@ components:
           items: { type: string }
     Approval:
       type: object
-      required: [id, title, requester, requesterInitials, approver, status, dueDate, category]
+      required:
+        [
+          id,
+          title,
+          requester,
+          requesterInitials,
+          approver,
+          status,
+          dueDate,
+          category,
+        ]
       properties:
         id: { type: string }
         title: { type: string }
@@ -456,7 +498,8 @@ components:
         status: { type: string }
     Action:
       type: object
-      required: [id, title, owner, ownerInitials, status, dueDate, source, priority]
+      required:
+        [id, title, owner, ownerInitials, status, dueDate, source, priority]
       properties:
         id: { type: string }
         title: { type: string }
@@ -473,7 +516,8 @@ components:
         status: { type: string }
     Alert:
       type: object
-      required: [id, title, description, type, createdAt, acknowledged, severity]
+      required:
+        [id, title, description, type, createdAt, acknowledged, severity]
       properties:
         id: { type: string }
         title: { type: string }
@@ -527,4 +571,3 @@ components:
         sources:
           type: array
           items: { type: string }
-
