@@ -1,5 +1,35 @@
-const rawBaseUrl = (import.meta.env.VITE_API_BASE_URL || "").replace(/\/+$/, "");
-export const API_BASE = rawBaseUrl ? `${rawBaseUrl}` : "/api";
+const envUrl = (import.meta.env.VITE_API_BASE_URL || "").trim().replace(/\/+$/, "");
+export const SERVER_HOST = envUrl.replace(/\/api$/, "");
+export const API_BASE = SERVER_HOST ? `${SERVER_HOST}/api` : "/api";
+
+export async function safeParseResponse<T = any>(res: Response): Promise<T> {
+  const text = await res.text();
+  if (!text || text.trim().length === 0) {
+    if (!res.ok) {
+      if (res.status === 405 && !import.meta.env.VITE_API_BASE_URL) {
+        throw new Error(
+          "API endpoint unreachable (HTTP 405). Ensure VITE_API_BASE_URL is configured in Vercel Project Settings pointing to your Render backend."
+        );
+      }
+      throw new Error(`Server returned HTTP ${res.status} (${res.statusText || "Empty response"})`);
+    }
+    return {} as T;
+  }
+
+  try {
+    return JSON.parse(text) as T;
+  } catch {
+    if (!res.ok) {
+      if (text.includes("<!doctype html") || text.includes("<html")) {
+        throw new Error(
+          `Server returned HTTP ${res.status}. If your backend is hosted on Render free tier, it may be waking up from sleep. Please wait a few seconds and try again.`
+        );
+      }
+      throw new Error(`Server returned HTTP ${res.status}: ${text.slice(0, 150)}`);
+    }
+    return {} as T;
+  }
+}
 
 function getToken(): string | null {
   return localStorage.getItem("coord_token");
@@ -18,50 +48,54 @@ function authHeaders(
 }
 
 async function apiGet<T>(path: string): Promise<T> {
-  const res = await fetch(`${API_BASE}${path}`, { headers: authHeaders() });
+  const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  const res = await fetch(`${API_BASE}${cleanPath}`, { headers: authHeaders() });
+  const data = await safeParseResponse<any>(res);
   if (!res.ok) {
-    const err = await res.json().catch(() => ({ error: res.statusText }));
-    throw new Error(err.error || `HTTP ${res.status}`);
+    throw new Error(data?.error || data?.message || `HTTP ${res.status}`);
   }
-  return res.json();
+  return data as T;
 }
 
 async function apiPost<T>(path: string, body?: unknown): Promise<T> {
-  const res = await fetch(`${API_BASE}${path}`, {
+  const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  const res = await fetch(`${API_BASE}${cleanPath}`, {
     method: "POST",
     headers: authHeaders(),
     body: body !== undefined ? JSON.stringify(body) : undefined,
   });
+  const data = await safeParseResponse<any>(res);
   if (!res.ok) {
-    const err = await res.json().catch(() => ({ error: res.statusText }));
-    throw new Error(err.error || `HTTP ${res.status}`);
+    throw new Error(data?.error || data?.message || `HTTP ${res.status}`);
   }
-  return res.json();
+  return data as T;
 }
 
 async function apiPatch<T>(path: string, body?: unknown): Promise<T> {
-  const res = await fetch(`${API_BASE}${path}`, {
+  const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  const res = await fetch(`${API_BASE}${cleanPath}`, {
     method: "PATCH",
     headers: authHeaders(),
     body: body !== undefined ? JSON.stringify(body) : undefined,
   });
+  const data = await safeParseResponse<any>(res);
   if (!res.ok) {
-    const err = await res.json().catch(() => ({ error: res.statusText }));
-    throw new Error(err.error || `HTTP ${res.status}`);
+    throw new Error(data?.error || data?.message || `HTTP ${res.status}`);
   }
-  return res.json();
+  return data as T;
 }
 
 async function apiDelete<T>(path: string): Promise<T> {
-  const res = await fetch(`${API_BASE}${path}`, {
+  const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  const res = await fetch(`${API_BASE}${cleanPath}`, {
     method: "DELETE",
     headers: authHeaders(),
   });
+  const data = await safeParseResponse<any>(res);
   if (!res.ok) {
-    const err = await res.json().catch(() => ({ error: res.statusText }));
-    throw new Error(err.error || `HTTP ${res.status}`);
+    throw new Error(data?.error || data?.message || `HTTP ${res.status}`);
   }
-  return res.json();
+  return data as T;
 }
 
 export const deleteActivity = (id: string) =>

@@ -7,15 +7,17 @@ import React, {
   type ReactNode,
 } from "react";
 import { setAuthTokenGetter, setBaseUrl } from "@workspace/api-client-react";
+import { safeParseResponse } from "./api-custom";
 
 // Initialize auth token getter eagerly at module level
 setAuthTokenGetter(() => localStorage.getItem("coord_token"));
 
-const rawBaseUrl = (import.meta.env.VITE_API_BASE_URL || "").replace(/\/+$/, "");
-export const API_BASE = rawBaseUrl ? `${rawBaseUrl}` : "/api";
+const envUrl = (import.meta.env.VITE_API_BASE_URL || "").trim().replace(/\/+$/, "");
+export const SERVER_HOST = envUrl.replace(/\/api$/, "");
+export const API_BASE = SERVER_HOST ? `${SERVER_HOST}/api` : "/api";
 
-if (rawBaseUrl) {
-  setBaseUrl(rawBaseUrl);
+if (SERVER_HOST) {
+  setBaseUrl(SERVER_HOST);
 }
 
 export interface AuthUser {
@@ -73,7 +75,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     })
       .then(async (response) => {
         if (!response.ok) throw new Error("Session expired");
-        const currentUser = await response.json();
+        const currentUser = await safeParseResponse<AuthUser>(response);
+        if (!currentUser?.id) throw new Error("Invalid session data");
         setUser(currentUser);
         localStorage.setItem("coord_user", JSON.stringify(currentUser));
       })
@@ -100,8 +103,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
       });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Login failed");
+      const data = await safeParseResponse<any>(res);
+      if (!res.ok) throw new Error(data?.error || data?.message || `Login failed (HTTP ${res.status})`);
       saveAuth(data.token, data.user);
     },
     [saveAuth],
@@ -120,8 +123,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, password, projectName, role }),
       });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Registration failed");
+      const data = await safeParseResponse<any>(res);
+      if (!res.ok) throw new Error(data?.error || data?.message || `Registration failed (HTTP ${res.status})`);
       saveAuth(data.token, data.user);
     },
     [saveAuth],
@@ -133,8 +136,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       headers: { "Content-Type": "application/json" },
       body: "{}",
     });
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.error || "Demo login failed");
+    const data = await safeParseResponse<any>(res);
+    if (!res.ok) throw new Error(data?.error || data?.message || `Demo login failed (HTTP ${res.status})`);
     saveAuth(data.token, data.user);
   }, [saveAuth]);
 
@@ -149,8 +152,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         },
         body: JSON.stringify({ role, name, email }),
       });
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Failed to switch role");
+      const data = await safeParseResponse<any>(res);
+      if (!res.ok) throw new Error(data?.error || data?.message || `Failed to switch role (HTTP ${res.status})`);
       saveAuth(data.token, data.user);
     },
     [token, saveAuth],
@@ -166,8 +169,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       },
       body: "{}",
     });
-    const data = await res.json();
-    if (!res.ok) throw new Error(data.error || "Seed failed");
+    const data = await safeParseResponse<any>(res);
+    if (!res.ok) throw new Error(data?.error || data?.message || `Seed failed (HTTP ${res.status})`);
     return data;
   }, [token]);
 

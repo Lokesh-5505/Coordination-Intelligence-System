@@ -43,7 +43,11 @@ app.use(
       if (!origin) return callback(null, true);
       if (
         allowedOrigins.includes(origin) ||
-        /\.vercel\.app$/.test(origin) ||
+        allowedOrigins.includes("*") ||
+        /\.vercel\.app(:[0-9]+)?$/.test(origin) ||
+        origin.includes("localhost") ||
+        origin.includes("127.0.0.1") ||
+        !process.env.CLIENT_ORIGIN ||
         process.env.NODE_ENV !== "production"
       ) {
         return callback(null, true);
@@ -56,6 +60,25 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Support both /api-prefixed routes and root-relative routes
 app.use("/api", router);
+app.use(router);
+
+// Ensure 404 responses are always structured JSON, never HTML or empty bodies
+app.use((req, res) => {
+  res.status(404).json({
+    error: `Cannot ${req.method} ${req.originalUrl}`,
+    status: 404,
+  });
+});
+
+// Central error handler returning structured JSON
+app.use((err: any, req: any, res: any, next: any) => {
+  logger.error({ err }, "Unhandled server error");
+  res.status(err.status || 500).json({
+    error: err.message || "Internal server error",
+    status: err.status || 500,
+  });
+});
 
 export default app;

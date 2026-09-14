@@ -89,6 +89,7 @@ import RegisterPage from "@/pages/RegisterPage";
 import { AuthProvider, useAuth } from "@/lib/auth-context";
 import api, {
   API_BASE,
+  safeParseResponse,
   adoptChangeActions,
   createAction,
   createActivity,
@@ -1446,9 +1447,14 @@ function Dashboard() {
           severity: "critical",
         }),
       });
-      const newChange = await res.json();
+      const newChange = await safeParseResponse<any>(res);
+      if (!res.ok) {
+        throw new Error(newChange?.error || newChange?.message || `HTTP ${res.status}`);
+      }
       qc.invalidateQueries();
-      setLocation(`/changes/${newChange.id}`);
+      if (newChange?.id) {
+        setLocation(`/changes/${newChange.id}`);
+      }
     } catch (e: any) {
       alert("Failed to simulate change: " + e.message);
     } finally {
@@ -3383,10 +3389,10 @@ function Approvals() {
         },
         body: JSON.stringify({ status }),
       });
+      const data = await safeParseResponse<any>(res);
       if (!res.ok) {
-        const err = await res.json().catch(() => ({}));
         alert(
-          `RBAC Authorization Notice (${res.status}):\n${err.error || err.message || "Failed to update approval. Check your active role permissions."}`,
+          `RBAC Authorization Notice (${res.status}):\n${data?.error || data?.message || "Failed to update approval. Check your active role permissions."}`,
         );
         return;
       }
@@ -4370,12 +4376,10 @@ Ask me anything about decisions, blast radius impacts, or trade responsibilities
           conversationHistory,
         }),
       });
-
+      const data = await safeParseResponse<any>(res);
       if (!res.ok) {
-        throw new Error(`Server returned HTTP ${res.status}`);
+        throw new Error(data?.error || data?.message || `Server returned HTTP ${res.status}`);
       }
-
-      const data = await res.json();
       const assistantMsg: ChatMessage = {
         id: `ai-${Date.now()}`,
         sender: "assistant",
